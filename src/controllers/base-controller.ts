@@ -1,7 +1,7 @@
 import { Response } from 'express'
 import { ObjectSchema } from 'joi'
 
-import { TractableError } from '../models/errors'
+import { TractableError } from '@models/errors'
 
 export class BaseController {
 	static joiValidator<T>(
@@ -29,7 +29,7 @@ export class BaseController {
 	}
 
 	static handleError(res: Response, error: any) {
-		console.log(
+		console.error(
 			new Date().toUTCString(),
 			BaseController.getRequestIp(res),
 			error

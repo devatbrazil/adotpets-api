@@ -1,8 +1,7 @@
 import { Router } from 'express'
-import { readdirSync } from 'fs'
 
-import { testRouter } from './test'
+import { userRouter } from './user-router'
 
 export const router = Router()
 
-// router.use('/test', testRouter)
+router.use('/user', userRouter)
