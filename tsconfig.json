@@ -21,11 +21,11 @@
 			"@joi-schemas/*": ["./src/joi-schemas/*"],
 			"@services/*": ["./src/services/*"],
 			"@repositories/*": ["./src/repositories/*"],
-      "@models/*": ["./src/models/*"],
-      "@utils/*": ["./src/utils/*"]
+			"@models/*": ["./src/models/*"],
+			"@utils/*": ["./src/utils/*"],
+			"@entities/*": ["./src/entities/*"],
+			"@database/*": ["./src/database/*"]
 		}
 	},
-	"include": [
-    "src/**/*"
-  ]
+	"include": ["src/**/*"]
 }
